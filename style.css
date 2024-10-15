@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .tshirt-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tshirt {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: left;
+    background-color: white;
+    transition: transform 0.2s;
+  }
+  
+  .tshirt:hover {
+    transform: scale(1.05);
+  }
+  
+  .tshirt img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }

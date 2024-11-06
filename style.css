@@ -3,38 +3,76 @@ body {
     margin: 0;
     padding: 20px;
     background-color: #ffffff;
-  }
-  
-  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
+  h1 {
+    color: #161616;
+    font-size: 2.8rem;
+    margin: 40px 0 20px;
+  }
+
   
   .tshirt-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
   }
   
-  .tshirt {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
-    text-align: left;
-    background-color: white;
-    transition: transform 0.2s;
+  .tshirt-item {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
   }
   
-  .tshirt:hover {
+  .tshirt-item:hover {
     transform: scale(1.05);
   }
   
-  .tshirt img {
+  img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .tshirt-item h2 {
+    font-size: 1.6rem;
+    color: #1c1919;
+    margin: 15px 0;
   }
   
+  .tshirt-item p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #1e1d1d;
+  }
+  
+  .tshirt-item .action-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  select {
+    padding: 8px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+
   button {
     padding: 5px 10px;
     margin-top: 10px;
@@ -43,6 +81,9 @@ body {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+  width: 100%;
   }
   
   button:hover {
